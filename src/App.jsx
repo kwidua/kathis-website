@@ -1,7 +1,8 @@
 import './index.css'
-import Skills from './Skills'
-import Pets from './Pets'
-import AboutMe from './AboutMe'
+import Skills from './components/Skills'
+import Pets from './components/Pets'
+import AboutMe from './components/AboutMe'
+import Timeline from './components/Timeline'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <AboutMe />
       <Skills />
+      <Timeline />
       <Pets/>
     </>
   )
