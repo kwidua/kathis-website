@@ -1,5 +1,4 @@
 
-
 export default function Skills() {
     var spanPropsTechnical = "inline-flex items-center gap-x-2.5 py-2.5 px-3 rounded-full text-m font-medium bg-radial from-sky-100 from-30% to-blue-300 text-sky-800";
     var spanPropsSoft = "inline-flex items-center gap-x-2.5 py-2.5 px-3 rounded-full text-m font-medium  bg-radial from-yellow-100 from-30% to-orange-300 text-orange-800";
@@ -19,7 +18,9 @@ export default function Skills() {
             <span className={spanPropsSoft}>Deutsch</span>
             <span className={spanPropsSoft}>Bulgarisch</span>
             </div>
-            </section>
+            <p>
+            </p>
+        </section>
         </>
     )
 }
