@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
 
 @theme {
   --color-background: oklch(29.8% 0.07 227.392);
@@ -48,36 +50,14 @@ p {
   font-size: var(--text-md);
 
   @variant lg {
-    font-size: var(--text-xl);
+    font-size: var(--text-4xl);
   }
 
   @variant md {
-    font-size: var(--text-lg);
+    font-size: var(--text-2xl);
   }
 
   color: white;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
 }
 
 section {
@@ -88,13 +68,25 @@ section:first-of-type {
   padding-top: 5em;
 }
 
-button:hover {
-  border-color: #646cff;
+.dark nav {
+  background: var(--cyan-950);
 }
+
+.light nav {
+  background: white
+}
+
+
 
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+@layer utilities {
+  .my-gradient {
+    @apply bg-gradient-to-b from-cyan-800 from-10% to-cyan-950 to-80%;
+  }
 }
 
 @media (prefers-color-scheme: light) {
