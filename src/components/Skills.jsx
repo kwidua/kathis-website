@@ -18,8 +18,6 @@ export default function Skills() {
             <span className={spanPropsSoft}>Deutsch</span>
             <span className={spanPropsSoft}>Bulgarisch</span>
             </div>
-            <p>
-            </p>
         </section>
         </>
     )
