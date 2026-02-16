@@ -1,6 +1,5 @@
 import './index.css'
 import HomePage from './pages/HomePage'
-import SkillDetails from './pages/SkillDetails'
 import AboutMe from './pages/AboutMe'
 import ProjectsPage from './pages/ProjectsPage'
 import Contact from './pages/Contact'
