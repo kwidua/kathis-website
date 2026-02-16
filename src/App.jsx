@@ -1,18 +1,22 @@
 import './index.css'
-import Skills from './components/Skills'
-import Pets from './components/Pets'
-import AboutMe from './components/AboutMe'
-import Timeline from './components/Timeline'
+import HomePage from './pages/HomePage'
+import SkillDetails from './pages/SkillDetails'
+import AboutMe from './pages/AboutMe'
+import ProjectsPage from './pages/ProjectsPage'
+import Contact from './pages/Contact'
+import { Routes, Route } from 'react-router-dom'
+
 
 function App() {
-
   return (
-    <>
-      <AboutMe />
-      <Skills />
-      <Timeline />
-      <Pets/>
-    </>
+
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/skills" element={<SkillDetails />} />
+      <Route path="/about" element={<AboutMe />} />
+      <Route path="/projects" element={<ProjectsPage />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
   )
 }
 
