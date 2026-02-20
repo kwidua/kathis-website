@@ -1,14 +1,14 @@
 
-import ProfileImage from "../ui/roundImage.jsx"
+import ProfileImage from "../ui/RoundImage.js"
 import Me from '../assets/Profile.jpeg'
-import  { content } from '../content.js'
+import  { content } from '../content.ts'
 
 export default function AboutMe() {
     const {hero} = content
  
     return (
         <>
-        <section className="text-center font-bold pt-10 xs:p-10 min-h-96 bg-gradient-to-b from-cyan-800 from-10% to-cyan-950 to-80% ">
+        <section className="text-center font-bold pt-10 xs:p-10 min-h-96 my-gradient">
         <h1>Hi. I'm Kathi.</h1>
         <h1>Softwareengineer.</h1>
         <div className="flex justify-center p-6 flex-wrap md:flex-row">

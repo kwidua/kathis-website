@@ -2,10 +2,10 @@ import { createContext, useContext, useEffect, useState } from 'react';
 
 const ThemeContext = createContext({
   theme: 'light',
-  setTheme: () => {},
+  setTheme: (theme: 'light' | 'dark') => {},
 });
 
-export const ThemeProvider = ({ children }) => {
+export const ThemeProvider = ({ children } : { children: React.ReactNode }) => {
   const [theme, setTheme] = useState('light');
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export const ThemeProvider = ({ children }) => {
     setTheme(appliedTheme);
   }, []);
 
-  const updateTheme = (newTheme) => {
+  const updateTheme = (newTheme: 'light' | 'dark') => {
     localStorage.setItem('theme', newTheme);
     document.documentElement.classList.remove('light', 'dark');
     document.documentElement.classList.add(newTheme);

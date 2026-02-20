@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
-import ThemeToggle from "./ThemeToggle.jsx";
-import routes from './../routes.js'
-import Button from "./Button.jsx";
+import ThemeToggle from "./ThemeToggle.js";
+import routes from '../routes.ts'
+import Button from "./Button.js";
 
  
 export default function HeaderNavigation() {
@@ -9,7 +9,7 @@ export default function HeaderNavigation() {
 
    function handleHamburger() {
         const menu = document.querySelector('#mobile-menu');
-        menu.classList.toggle('hidden')
+        menu != null ?  menu.classList.toggle('hidden') : null
     }
 
    return(<header>

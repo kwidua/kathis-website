@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useThemeSwitcher } from './../ThemeContext';
+import { useThemeSwitcher } from "../ThemeContext";
 
 export default function ThemeToggle() {
     const { theme, setTheme } = useThemeSwitcher();
@@ -9,11 +9,11 @@ export default function ThemeToggle() {
 }, []);
   
 
-
-     function handleDark(event) {
+     function handleDark(event: any) {
         setIsChecked(event.target.checked)
         setTheme(theme === 'dark' ? 'light' : 'dark')
-        document.getElementById('toggleDiv').classList.add('after:transition-all')
+        var toggleDiv = document.getElementById('toggleDiv')
+        toggleDiv ? toggleDiv.classList.add('after:transition-all') : null
 
     }
 

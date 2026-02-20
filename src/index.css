@@ -3,7 +3,8 @@
 
 
 @theme {
-  --color-background: oklch(29.8% 0.07 227.392);
+  --color-background-dark: oklch(29.8% 0.07 227.392);
+  --color-background-light: oklch(95.6% 0.045 203.388);
   --font-display: "Satoshi", "sans-serif";
   --span-skills: "inline-flex items-center gap-x-2.5 py-2.5 px-3 rounded-full text-m font-medium"
 
@@ -24,7 +25,11 @@
 }
 
 body {
-  background-color: var(--color-background);
+  background-color: var(--color-background-dark);
+}
+
+.light body {
+  background-color: var(--color-background-light);
 }
 
 h1 {
@@ -36,6 +41,10 @@ h1 {
   }
 }
 
+.light h1 {
+  color: var(--color-cyan-800);
+}
+
 h2 {
   color: var(--color-sky-200);
   font-size: var(--text-4xl);
@@ -44,6 +53,10 @@ h2 {
   @variant md {
     font-size: var(--text-6xl);
   }
+}
+
+.light h2 {
+  color: var(--color-cyan-900);
 }
 
 p {
@@ -60,6 +73,10 @@ p {
   color: white;
 }
 
+.light p {
+  color: var(--color-cyan-900);
+}
+
 section {
   padding-top: 20em;
 }
@@ -73,10 +90,8 @@ section:first-of-type {
 }
 
 .light nav {
-  background: white
+  background: var(--color-sky-100);
 }
-
-
 
 button:focus,
 button:focus-visible {
@@ -85,7 +100,7 @@ button:focus-visible {
 
 @layer utilities {
   .my-gradient {
-    @apply bg-gradient-to-b from-cyan-800 from-10% to-cyan-950 to-80%;
+    @apply bg-gradient-to-b  from-sky-200 to-cyan-100 dark:from-cyan-800 from-10% dark:to-cyan-950 to-80%;
   }
 }
 
@@ -93,4 +108,159 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
+}
+
+/* .test {
+  border-left: 5rem solid transparent;
+  border-right: 5rem solid transparent;
+  border-top: 7rem solid;
+	display: inline-block;
+  border-radius: 10%;
+} */
+
+/* .test {
+  width: 20rem;
+  height: 15rem;
+  border-radius: 2rem;
+  position: relative;
+  background-color: red;
+  display: inline-block;
+
+
+    &::after {
+    content: "A";
+    position: absolute;
+    left:-5%;
+    top:50%;
+    width: 0;
+    height: 0m;
+    transform: translate(-100%, -50%);
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-right: 2.5rem solid transparent red;
+  }
+} */
+
+/* .test {
+  position:relative;
+  width: 10rem;
+  height: 9rem;
+
+  &::after, &::before {
+    position:absolute;
+    content:"";
+    left: 5rem;
+    top: 0;
+    width: 5rem;
+    height: 8rem;
+    background-color: red;
+    border-radius: 5rem 5rem 0 0;
+  }
+
+    &:before {
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    &:after {
+      left:0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+} */
+
+/* PROGRESS BAR */
+@keyframes progress {
+  from {
+    width: 0;
+  }
+}
+
+.animate-progress {
+  display: block;
+  animation: progress 1500ms ease-in 1;
+}
+
+/* CSS für Skill Badges */
+.main-wrapper {
+	width: 90%;
+	max-width: 900px;
+	margin: 3em auto;
+	text-align: center;
+}
+
+.badge {
+	position: relative;
+	margin: 1.5em 3em;
+	width: 8em;
+	height: 12.4em;
+	border-radius: 20px;
+	display: inline-block;
+	top: 0;
+	transition: all 0.2s ease;
+	&:before,
+	&:after {
+		position: absolute;
+		width: inherit;
+		height: inherit;
+		border-radius: inherit;
+		background: inherit;
+		content: "";
+    top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  margin: auto;
+	}
+	&:before {
+		transform: rotate(60deg);
+	}
+	&:after {
+		transform: rotate(-60deg);
+	}
+	&:hover {
+		top: -4px;
+	}
+	.circle {
+		width: 120px;
+		height: 120px;
+		position: absolute;
+		background: #fff;
+		z-index: 20;
+		border-radius: 50%;
+    top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  margin: auto;
+		i.fa {
+			font-size: 4em;
+			margin-top: 18px;
+		}
+	}
+
+	.ribbon {
+		position: absolute;
+		border-radius: 8px;
+		padding: 5px 5px 4px;
+		width: 210px;
+		z-index: 22;
+		color: #fff;
+		bottom: 24px;
+		left: 50%;
+		margin-left: -105px;
+		height: 36px;
+		font-size: 20px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.27);
+		text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+		text-transform: uppercase;
+    line-height: 1.2;
+    font-family: 'Comfortaa', sans-serif;
+		background: linear-gradient(to bottom right, #555 0%, #333 100%);
+		cursor: default;
+	}
+}
+
+.yellow {
+	background: linear-gradient(to bottom right, #ffeb3b 0%, #fbc02d 100%);
+	color: #ffb300;
 }

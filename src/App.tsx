@@ -1,9 +1,9 @@
 import './index.css'
+import { Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import AboutMe from './pages/AboutMe'
 import ProjectsPage from './pages/ProjectsPage'
 import Contact from './pages/Contact'
-import { Routes, Route } from 'react-router-dom'
 
 
 function App() {

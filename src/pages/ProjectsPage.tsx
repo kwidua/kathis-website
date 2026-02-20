@@ -1,11 +1,13 @@
-import HeaderNavigation from '../ui/HeaderNavigation'
 import Projects from '../components/Projects'
+import HeaderNavigation from '../ui/HeaderNavigation'
 
 export default function ProjectsPage() {
    return (
     <>
         <HeaderNavigation />
+        <div className='my-gradient'>
         <Projects />
+        </div>
     </>
     )
 }
