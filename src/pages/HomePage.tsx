@@ -10,7 +10,6 @@ export default function HomePage() {
     <HeaderNavigation />
       <Hero />
       <Skills all={false} />
-      <Projects all={false} />
       <Timeline />
     </>
     )

@@ -5,7 +5,7 @@ export default function ProjectsPage() {
    return (
     <>
         <HeaderNavigation />
-        <div className='my-gradient'>
+        <div>
         <Projects />
         </div>
     </>

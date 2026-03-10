@@ -31,6 +31,12 @@ export default function ContactForm() {
         <>
          <section className="flex flex-col gap-4 items-center my-gradient">
             <h1 className="m-4">Kontakt</h1>
+                <div className="rounded-lg w-full max-w-4xl mx-auto py-20 px-4 scroll-mt-20 bg-cyan-600 dark:bg-cyan-700">
+                    <p>Let's talk!</p>
+                    <p className="text-white">You can write me an email at ...... or find me on social media.</p>
+                    <i className="fa fa-linkedin" />
+                    <i className="fa fa-envelope" />
+                </div>
                 <form className="flex flex-col gap-2" onSubmit={handleSubmit(onSubmit)}>
                     <input {...register("email", {required: "email required"})}
                         placeholder="Your mail"

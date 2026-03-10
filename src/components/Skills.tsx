@@ -116,7 +116,7 @@ export default function Skills({all = true}) {
         </section>
 
 
-        <div className="pt-12 sm:pt-20">
+        {all && (<div className="pt-12 sm:pt-20">
             <div className="pb-12 mt-10 sm:pb-16">
             <div className="relative">
                 <div className="absolute inset-0 h-1/2"></div>
@@ -144,6 +144,7 @@ export default function Skills({all = true}) {
             </div>
             </div>
         </div>
+        )}
     </>
     )
 }

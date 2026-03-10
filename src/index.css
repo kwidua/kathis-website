@@ -3,8 +3,15 @@
 
 
 @theme {
-  --color-background-dark: oklch(29.8% 0.07 227.392);
-  --color-background-light: oklch(95.6% 0.045 203.388);
+  --color-background-dark: oklch(0.2144 0.0176 289.92);
+  --color-background-light: oklch(0.9609 0.0094 292.8);
+  --color-primary-purple: oklch(0.4588 0.0681 294.5);
+  --color-light-purple: oklch(0.8439 0.0418 294.66);
+  --color-accent-orange: oklch(0.7194 0.1793 54.35);
+  --color-accent-blue: oklch(0.6059 0.087 220.06);
+  --color-text-blue: oklch(0.4461 0.0298 257.68);
+  --color-text-light:oklch(0.8717 0.0093 258.34);
+  --color-dark-blue: oklch(0.2778 0.0319 256.28);
   --font-display: "Satoshi", "sans-serif";
   --span-skills: "inline-flex items-center gap-x-2.5 py-2.5 px-3 rounded-full text-m font-medium"
 
@@ -16,7 +23,6 @@
   font-weight: 400;
 
   color-scheme: light dark;
-
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -32,7 +38,7 @@ body {
   background-color: var(--color-background-light);
 }
 
-h1 {
+/* h1 {
   color: var(--color-sky-200);
   font-size: var(--text-4xl);
 
@@ -43,9 +49,9 @@ h1 {
 
 .light h1 {
   color: var(--color-cyan-800);
-}
+} */
 
-h2 {
+/* h2 {
   color: var(--color-sky-200);
   font-size: var(--text-4xl);
   font-weight: 100;
@@ -57,9 +63,9 @@ h2 {
 
 .light h2 {
   color: var(--color-cyan-900);
-}
+} */
 
-p {
+/* p {
   font-size: var(--text-md);
 
   @variant lg {
@@ -70,11 +76,11 @@ p {
     font-size: var(--text-2xl);
   }
 
-  color: white;
-}
+  color: var(--color-light-purple);
+} */
 
 .light p {
-  color: var(--color-cyan-900);
+  color: var(--color-text-blue);
 }
 
 section {
@@ -86,11 +92,11 @@ section:first-of-type {
 }
 
 .dark nav {
-  background: var(--cyan-950);
+  background: oklch(0.2778 0.0319 256.28);
 }
 
 .light nav {
-  background: var(--color-sky-100);
+  background: oklch(0.9943 0.0013 286.38);
 }
 
 button:focus,
@@ -104,69 +110,68 @@ button:focus-visible {
   }
 }
 
+@layer components {
+  .h1-orange {
+    @apply font-bold text-accent-orange;
+  }
+
+  .h1-purple {
+    @apply font-bold text-light-purple;
+  }
+
+  .light h1 {
+    color: var(--color-cyan-800);
+  }
+
+  .light .h1-orange {
+    @apply text-accent-orange;
+  }
+
+  .light .h1-purple {
+    @apply text-primary-purple;
+  }
+
+  .h2-card {
+    @apply text-white;
+    font-size: small;
+  }
+
+  .light .h2-card {
+    @apply text-dark-blue;
+  }
+
+  .p-color {
+    @apply text-white;
+  }
+
+  .light .p-color {
+    @apply text-white;
+  }
+
+  .light .p {
+     @apply text-primary-purple;
+  }
+
+  .p-card {
+    font-size: medium;
+  }
+
+  h1 {
+  color: var(--color-sky-200);
+  font-size: var(--text-4xl);
+
+  @variant md {
+    font-size: var(--text-8xl);
+  }
+}
+  
+}
+
 @media (prefers-color-scheme: light) {
   a:hover {
     color: #747bff;
   }
 }
-
-/* .test {
-  border-left: 5rem solid transparent;
-  border-right: 5rem solid transparent;
-  border-top: 7rem solid;
-	display: inline-block;
-  border-radius: 10%;
-} */
-
-/* .test {
-  width: 20rem;
-  height: 15rem;
-  border-radius: 2rem;
-  position: relative;
-  background-color: red;
-  display: inline-block;
-
-
-    &::after {
-    content: "A";
-    position: absolute;
-    left:-5%;
-    top:50%;
-    width: 0;
-    height: 0m;
-    transform: translate(-100%, -50%);
-    border-top: 1.5rem solid transparent;
-    border-bottom: 1.5rem solid transparent;
-    border-right: 2.5rem solid transparent red;
-  }
-} */
-
-/* .test {
-  position:relative;
-  width: 10rem;
-  height: 9rem;
-
-  &::after, &::before {
-    position:absolute;
-    content:"";
-    left: 5rem;
-    top: 0;
-    width: 5rem;
-    height: 8rem;
-    background-color: red;
-    border-radius: 5rem 5rem 0 0;
-  }
-
-    &:before {
-      transform: rotate(-45deg);
-      transform-origin: 0 100%;
-    }
-    &:after {
-      left:0;
-      transform: rotate(45deg);
-      transform-origin: 100% 100%;
-    }
-} */
 
 /* PROGRESS BAR */
 @keyframes progress {
