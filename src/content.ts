@@ -143,38 +143,6 @@ lebenslauf: {
     }
 },
 
-projects: {
-    de: {
-
-    },
-    en: {
-
-    },
-    best: [
-        {
-            title: 'Eigene Website',
-            subtext: 'Developer Website mit React & Typescript',
-            link: 'https://github.com/kwidua/kathis-website',
-            date: '2025-02-01',
-            details: "Im Rahmen der Syntax"
-        },
-        {
-            title: 'Mandrake',
-            subtext: 'Kleine Web App zum pflegen von Pflanzen',
-            link: 'https://github.com/kwidua/mandrake',
-            date: '2023-09-10',
-        },
-    ],
-    other: [
-        {
-            title: 'Bachelorarbeit',
-            subtext: 'Vorteile von High-Level-Protokollen gegenüber WebSocket, veranschaulicht am Beispiel von Mercure',
-            link: 'https://github.com/kwidua/bachelorarbeit',
-            date: '2020-05-07',
-        }
-    ]
-},
-
 contact: {
     de: {
         title: 'Kontakt',
@@ -194,12 +162,15 @@ about: {
         description: 'Lerne mich besser kennen - meinen Weg, meine Leidenschaften und was mich als Software Engineer antreibt.',
         journey: {
             title: 'Mein Weg',
-            p1: 'Hallo! Ich bin Kathi, eine leidenschaftliche Softwareentwicklerin mit 8 Jahren Erfahrung in der Entwicklung...',
-            p2: 'Im Laufe der Jahre habe ich mich auf PHP und das Symfony-Framework spezialisiert..'
+            p1: 'Hallo! Ich bin Kathi, eine leidenschaftliche Softwareentwicklerin mit 8 Jahren Erfahrung in der Webentwicklung. Nach meinem Informatikstudium bin ich in die Webentwicklung eingestiegen und arbeite inzwischen seit mehr als acht Jahren in diesem Bereich. Ein großer Teil meiner Erfahrung liegt im Backend mit PHP und Symfony, wo ich gelernt habe, Anwendungen strukturiert zu entwickeln und langfristig wartbar zu gestalten.',
+            p2: 'Im Laufe der Zeit habe ich gelernt, Software nicht nur funktional zu betrachten, sondern als System: gute Architektur, klare Verantwortlichkeiten und verständlicher Code sind für mich zentrale Bestandteile professioneller Entwicklung. Besonders schätze ich den Austausch im Team. Durch Code Reviews, gemeinsame Diskussionen über Lösungsansätze und gelegentliches Pair Programming entstehen aus meiner Sicht die besten Lösungen.',
+            p3: 'Aktuell vertiefe ich meine Kenntnisse im Bereich moderner Frontend-Entwicklung mit React. Mich interessiert besonders, wie sich saubere technische Strukturen mit guter Benutzererfahrung verbinden lassen. Meine Backend-Erfahrung hilft mir dabei, Anwendungen ganzheitlich zu denken: von der Datenstruktur über APIs bis hin zur Benutzeroberfläche.'
         },
         love: {
             title: 'Was ich liebe',
-            p1: 'Wenn ich nicht programmiere, findest du mich dabei,'
+            p1: 'Mich begeistert es, Dinge zu verstehen und kontinuierlich dazuzulernen, sei es eine neue Technologie, ein neuer Skill (ob technisch oder handwerklich), oder ein Fun Fact.',
+            p2: 'Außerhalb der Softwareentwicklung verbringe ich viel Zeit im Garten. Dort finde ich einen Ausgleich zur Bildschirmarbeit und es erinnert mich daran, dass viele Dinge Zeit, Geduld und kontinuierliche Pflege brauchen, um zu wachsen. Meine zwei Katzen und meine Schildkröten leisten mir dabei meist Gesellschaft.',
+            p3: 'Außerdem reise ich gerne'
         },
         experience: {
             title: 'Erfahrung',
@@ -223,7 +194,10 @@ about: {
                 title: "Meine Mitbewohner",
                 description: 'Das sind meine tierischen Mitbewohner – meine zwei Katzen, treue Debugging-Helfer (auch wenn sie am liebsten mitten auf der Tastatur liegen). Und meine zwei Schildkröten, die ich gerne in meinem Garten beobachte. Sie erinnern mich daran, zwischendurch innezuhalten und das Leben zu genießen.'
             },
-            garden: {}
+            garden: {
+                title: "Draußen im Grünen",
+                description: "Außerhalb der Softwareentwicklung verbringe ich viel Zeit im Garten. Dort finde ich einen Ausgleich zur Bildschirmarbeit. Es erinnert mich daran, dass viele Dinge Zeit, Geduld und kontinuierliche Pflege brauchen, um zu wachsen.",
+            }
         }
     },
     en: {

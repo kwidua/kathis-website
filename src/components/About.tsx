@@ -31,7 +31,7 @@ export default function About() {
               <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed text-sm md:text-base">
                 <p className="p-card">{data.journey.p1}</p>
                 <p>{data.journey.p2}</p>
-                <p>{}</p>
+                <p>{data.journey.p3}</p>
               </div>
             </div>
 
@@ -89,25 +89,40 @@ export default function About() {
         </div>
 
         <div className="mb-12">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-            {data.personal.title}
-          </h2>
-        </div>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+              {data.personal.title}
+            </h2>
+          </div>
 
-        <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 md:p-8 shadow-lg mb-8">
-          <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-            {data.personal.pets.title}
-          </h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm md:text-base">
-            {data.personal.pets.description}
-          </p>
-          
-          <div>
-            <Pets />
+          <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 md:p-8 shadow-lg mb-8">
+            <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+              {data.personal.pets.title}
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm md:text-base">
+              {data.personal.pets.description}
+            </p>
+            
+            <div>
+              <Pets />
+            </div>
           </div>
         </div>
-    </div>
+
+        <div className="mb-12">
+          <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 md:p-8 shadow-lg mb-8">
+            <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+              {data.personal.garden.title}
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm md:text-base">
+              {data.personal.garden.description}
+            </p>
+            
+            <div>
+              Pictures
+            </div>
+          </div>
+        </div>
 
     </div>
   );

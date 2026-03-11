@@ -13,7 +13,9 @@ const thesisImage = '';
 const mandrakeImage = '';
 const websiteImage = '';
 
-export const projectsDE: Project[] = [
+
+
+const projectsDE: Project[] = [
     {
       id: 1,
       title: "Eigene Webseite",
@@ -29,7 +31,7 @@ export const projectsDE: Project[] = [
       title: "Mandrake",
       description:
         "Kleine Webb App zum pflegen von Pflanzen",
-      technologies: ["PHP", "Symfony", "MySQL"],
+      technologies: ["PHP", "Symfony", "MySQL", "Twig"],
       image: "https://images.unsplash.com/photo-1601985705806-5b9a71f6004f?q=80&w=800",
       github: "https://github.com",
       color: "from-green-500 to-emerald-500",
@@ -46,7 +48,7 @@ export const projectsDE: Project[] = [
     },
 ]
 
-export const projectsEN: Project[] = [
+const projectsEN: Project[] = [
     {
       id: 1,
       title: "Website",
@@ -62,9 +64,10 @@ export const projectsEN: Project[] = [
       title: "Mandrake",
       description:
         "Kleine Webb App zum pflegen von Pflanzen",
-      technologies: ["PHP", "Symfony", "MySQL"],
+      technologies: ["PHP", "Symfony", "MySQL", "Twig"],
       image: "https://images.unsplash.com/photo-1601985705806-5b9a71f6004f?q=80&w=800",
       github: "https://github.com",
+      demo: "https://example.com",
       color: "from-green-500 to-emerald-500",
     },
     {
@@ -78,3 +81,16 @@ export const projectsEN: Project[] = [
       color: "from-indigo-500 to-purple-500",
     },
 ]
+
+export const projectPageData = {
+  de: {
+    title: "Projekte",
+    description: "Eine Auswahl von Projekten, an denen ich gearbeitet habe.",
+    data: projectsDE
+  },
+  en: {
+    title: "Projects",
+    description: "A selection of projects I've worked on.",
+    data: projectsEN
+  }
+}

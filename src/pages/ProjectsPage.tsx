@@ -5,9 +5,7 @@ export default function ProjectsPage() {
    return (
     <>
         <HeaderNavigation />
-        <div>
         <Projects />
-        </div>
     </>
     )
 }
