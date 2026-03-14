@@ -12,6 +12,7 @@
   --color-text-blue: oklch(0.4461 0.0298 257.68);
   --color-text-light:oklch(0.8717 0.0093 258.34);
   --color-dark-blue: oklch(0.2778 0.0319 256.28);
+  --color-dark-gray: oklch(0.278 0.033 256.848);
   --font-display: "Satoshi", "sans-serif";
   --span-skills: "inline-flex items-center gap-x-2.5 py-2.5 px-3 rounded-full text-m font-medium"
 
@@ -36,51 +37,6 @@ body {
 
 .light body {
   background-color: var(--color-background-light);
-}
-
-/* h1 {
-  color: var(--color-sky-200);
-  font-size: var(--text-4xl);
-
-  @variant md {
-    font-size: var(--text-8xl);
-  }
-}
-
-.light h1 {
-  color: var(--color-cyan-800);
-} */
-
-/* h2 {
-  color: var(--color-sky-200);
-  font-size: var(--text-4xl);
-  font-weight: 100;
-
-  @variant md {
-    font-size: var(--text-6xl);
-  }
-}
-
-.light h2 {
-  color: var(--color-cyan-900);
-} */
-
-/* p {
-  font-size: var(--text-md);
-
-  @variant lg {
-    font-size: var(--text-4xl);
-  }
-
-  @variant md {
-    font-size: var(--text-2xl);
-  }
-
-  color: var(--color-light-purple);
-} */
-
-.light p {
-  color: var(--color-text-blue);
 }
 
 section {
@@ -150,6 +106,10 @@ button:focus-visible {
 
   .light .p {
      @apply text-primary-purple;
+  }
+
+  .p {
+    @apply text-gray-300
   }
 
   .p-card {

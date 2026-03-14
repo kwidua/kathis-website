@@ -14,7 +14,7 @@ export default function AboutMe() {
  
     return (
         <>
-        <section className="max-w-6xl mx-auto px-6 py-20 md:py-40">
+        <section className="max-w-6xl mx-auto px-6 pt-20 md:pt-40 ">
         <div className="grid gap-8 md:gap-12 items-center md:grid-cols-2">
             <div className="relative order-2 md:order-1">
             <div className="relative">

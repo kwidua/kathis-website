@@ -1,5 +1,6 @@
 import About from '../components/About'
 import HeaderNavigation from '../ui/HeaderNavigation'
+import Footer from '../ui/Footer'
 
 export default function AboutMe() {
     return (
@@ -8,6 +9,7 @@ export default function AboutMe() {
         <div>
         <About/>
         </div>
+        <Footer />
     </>
     )
 }

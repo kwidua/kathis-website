@@ -48,6 +48,20 @@ export default function HeaderNavigation() {
                           </Link>
 
                           <Link
+                          to="/skills"
+                          className={`transition-colors relative ${
+                              isActive("/skills")
+                              ? "text-[#5b507a] dark:text-[#cdc7e5] font-semibold"
+                              : "text-gray-600 dark:text-gray-300 hover:text-[#5b507a] dark:hover:text-[#cdc7e5]"
+                          }`}
+                          >
+                              Skills
+                          {isActive("/skills") && (
+                              <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#5b507a] dark:bg-[#cdc7e5] rounded-full" />
+                          )}
+                          </Link>
+
+                          <Link
                           to="/about"
                           className={`transition-colors relative ${
                               isActive("/about")

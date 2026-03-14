@@ -3,12 +3,12 @@ hero: {
     en: {
         title1: "Hi. I'm ",
         title2: "Softwareengineer",
-        text: "8 years of experience in PHP/Symfony. Currently I'm deepening my expertise in React and modern frontend architecture.",
+        text: "8+ years of experience in PHP/Symfony. Currently I'm deepening my expertise in React and modern frontend architecture.",
     },
     de: {
         title1: "Hallo. Ich bin ",
         title2: "Softwareentwicklerin",
-        text: "8 Jahre Erfahrung in PHP/Symfony. Aktuell vertiefe ich meine Expertise in React und moderner Frontend-Architektur.",
+        text: "8+ Jahre Erfahrung in PHP/Symfony. Aktuell vertiefe ich meine Expertise in React und moderner Frontend-Architektur.",
     }
 },
 
@@ -158,7 +158,8 @@ contact: {
 
 about: {
     de: {
-        title: 'Über Mich',
+        title: 'Über ',
+        title2: 'Mich',
         description: 'Lerne mich besser kennen - meinen Weg, meine Leidenschaften und was mich als Software Engineer antreibt.',
         journey: {
             title: 'Mein Weg',
@@ -182,7 +183,7 @@ about: {
         },
         work: {
             title: 'Arbeitsstil',
-            description: 'Ich liebe Pai Programming, voneinander lernt man am besten'
+            description: 'Ich liebe Pair Programming, voneinander lernen macht nicht nur Spaß, sondern ist oft auch effizienter'
         },
         fun: {
             title: 'Fun Fact',
@@ -196,17 +197,23 @@ about: {
             },
             garden: {
                 title: "Draußen im Grünen",
-                description: "Außerhalb der Softwareentwicklung verbringe ich viel Zeit im Garten. Dort finde ich einen Ausgleich zur Bildschirmarbeit. Es erinnert mich daran, dass viele Dinge Zeit, Geduld und kontinuierliche Pflege brauchen, um zu wachsen.",
+                description: "Außerhalb der Softwareentwicklung verbringe ich viel Zeit im Garten. Dort finde ich einen Ausgleich zur Bildschirmarbeit. Es ist schön zu sehen, wie die Pflanzen sich entwickeln und wie die Arbeit Früchte trägt.",
+            },
+            travel: {
+                title: "Reisen",
+                description: "Durch ein Auslandsjahr, ein Auslandssemester und meine Zeit in Bulgarien habe ich Menschen aus vielen verschiedenen Ländern kennengelernt. Viele dieser Freundschaften bestehen bis heute, und sind einer der Gründe, warum ich gerne reise. Neue Orte zu entdecken und andere Perspektiven kennenzulernen inspiriert mich immer wieder."
             }
         }
     },
     en: {
-        title: 'About Me',
+        title: 'About ',
+        title2: 'Me',
         description: 'Get to know me better - my journey, passions, and what drives me as a software engineer.',
         journey: {
             title: 'My Journey',
-            p1: "Hi there! I'm Kathi, a passionate software engineer with 8 years of experience building",
-            p2: "Over the years, I've specialized in PHP and the Symfony framework",
+            p1: "Hello! I'm Kathi, a passionate software developer with 8 years of experience in web development. After completing my degree in computer science, I entered the field of web development and have now been working in this area for more than eight years. A large part of my experience lies in backend development with PHP and Symfony, where I learned to develop applications in a structured manner and design them to be maintainable in the long term.",
+            p2: "Over time, I have learned to view software not only in terms of its functionality, but also as a system: good architecture, clear responsibilities, and understandable code are, in my opinion, key components of professional development. I particularly value teamwork. In my view, code reviews, joint discussions about possible solutions, and occasional pair programming produce the best solutions.",
+            p3: "I am currently deepening my knowledge in the field of modern front-end development with React. I am particularly interested in how clean technical structures can be combined with a good user experience. My back-end experience helps me to think about applications holistically: from data structure and APIs to the user interface."
         },
         love: {
             title: 'What I Love',
@@ -218,11 +225,11 @@ about: {
         },
         education: {
             title: 'Education',
-            description: ''
+            description: 'Bachelor of Science in Computer Science (2021) and further training at Syntax in the field of front-end development'
         },
         work: {
-            title: '',
-            description: ''
+            title: 'Work Style',
+            description: "I love pair programming. Learning from each other is not only fun, but often more efficient too."
         },
         fun: {
             title: 'Fun Fact',
@@ -234,8 +241,20 @@ about: {
                 title: "My Companions",
                 description: 'Meet my companions – my two cats, excellent debugging partners (even if they prefer sitting on my keyboard). And my two turtles, whom I love watching in the garden. They remind me to take breaks and enjoy the little moments in life.'
             },
-            garden: {},
+            garden: {
+                title: "In my Garden",
+                description: "Outside of software development, I spend a lot of time in the garden. It's a nice way to balance out my screen-based work. It's wonderful to see how the plants develop and how the work bears fruit."
+            },
+            travel: {
+                title: "Travel",
+                description: "Through a year abroad, a semester abroad, and my time in Bulgaria, I got to know people from many different countries. Many of these friendships still exist today and are one of the reasons why I love to travel. Discovering new places and getting to know different perspectives inspires me time and time again."
+            }
         }
     }
+},
+
+footer: {
+    text: "© 2026 Katharina Widua",
+    impressum: ""
 }
 }

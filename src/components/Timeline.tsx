@@ -8,9 +8,9 @@ export default function Timeline() {
     const data = lebenslauf[language]
 
 return (
-<section className="flex place-content-center min-h-96 p-10">
+<section className="flex place-content-center">
     <div>
-    <h2>{data.title}</h2>
+    <h2 className="text-4xl h1-orange mb-10">{data.title}</h2>
     {data.steps.map((item: any )=> {
         return <TimelineStep date={item.date} title={item.title} subtext={item.subtitle}/>
     })}

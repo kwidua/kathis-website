@@ -1,5 +1,6 @@
 import Hero from '../components/Hero'
 import Timeline from '../components/Timeline'
+import Footer from '../ui/Footer'
 import HeaderNavigation from '../ui/HeaderNavigation'
 
 export default function HomePage() {
@@ -8,6 +9,7 @@ export default function HomePage() {
     <HeaderNavigation />
       <Hero />
       <Timeline />
+      <Footer />
     </>
     )
 }

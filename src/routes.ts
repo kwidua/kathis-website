@@ -4,7 +4,8 @@ const routes = {
     aboutMe: '/about',
     projects: '/projects',
     blog: '/blog',
-    contact: '/contact'
+    contact: '/contact',
+    impressum: '/impressum'
 };
 
 export default routes

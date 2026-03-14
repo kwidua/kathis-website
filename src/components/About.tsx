@@ -1,6 +1,7 @@
 import { Heart, Coffee, Code, Briefcase, GraduationCap, Sparkles } from "lucide-react";
 import  { content } from '../content.ts'
 import { useLanguageSwitcher } from "../contexts/LanguageContext.tsx"
+import garden from "./../assets/garden.jpg"
 import Pets from "./Pets.tsx";
 
 export default function About() {
@@ -9,16 +10,19 @@ export default function About() {
     const data = about[language]
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-16">
+     <section className="">
       {/* Header */}
-        <div className="text-center mb-16">
+         <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl mb-4 dark:text-gray-100">
             {data.title}
+            <span className="h1-purple font-bold">{data.title2}</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             {data.description}
             </p>
-        </div>
+          </div>
+
+        <div className="max-w-6xl mx-auto px-6">
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
         {/* Story Column */}
@@ -35,7 +39,7 @@ export default function About() {
               </div>
             </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 md:p-8 shadow-lg">
+          <div className="bg-white dark:bg-dark-gray rounded-3xl p-6 md:p-8 shadow-lg">
             <div className="flex items-center gap-3 mb-4">
               <Heart className="size-6 text-[#f77f00]" />
               <h2 className="text-xl h2-card md:text-2xl font-bold">
@@ -88,28 +92,26 @@ export default function About() {
         </div>
         </div>
 
-        <div className="mb-12">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-              {data.personal.title}
-            </h2>
-          </div>
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+            {data.personal.title}
+          </h2>
+        </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 md:p-8 shadow-lg mb-8">
-            <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-              {data.personal.pets.title}
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm md:text-base">
-              {data.personal.pets.description}
-            </p>
-            
-            <div>
-              <Pets />
-            </div>
+        <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 md:p-8 shadow-lg mb-8">
+          <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+            {data.personal.pets.title}
+          </h3>
+          <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm md:text-base">
+            {data.personal.pets.description}
+          </p>
+          
+          <div>
+            <Pets />
           </div>
         </div>
 
-        <div className="mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 md:p-8 shadow-lg mb-8">
             <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
               {data.personal.garden.title}
@@ -119,11 +121,24 @@ export default function About() {
             </p>
             
             <div>
+              <img src={garden}/>
+            </div>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 md:p-8 shadow-lg mb-8">
+            <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+              {data.personal.travel.title}
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm md:text-base">
+              {data.personal.travel.description}
+            </p>
+            
+            <div>
               Pictures
             </div>
           </div>
         </div>
-
-    </div>
+      </div>
+    </section>
   );
 }
