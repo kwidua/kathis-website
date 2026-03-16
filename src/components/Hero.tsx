@@ -67,7 +67,7 @@ export default function AboutMe() {
                 <Github className="size-4 md:size-5 text-gray-700 dark:text-gray-300" />
               </a>
               <a
-                href="https://www.linkedin.com/in/katharina-widua-8475a9201/∏"
+                href="https://www.linkedin.com/in/katharina-widua-8475a9201"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 md:p-3 bg-white dark:bg-gray-800 rounded-full shadow-md hover:shadow-lg transition-shadow hover:scale-110 transform duration-200 hover:bg-[#cdc7e5] dark:hover:bg-[#5b507a]"
