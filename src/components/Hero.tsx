@@ -14,8 +14,8 @@ export default function AboutMe() {
  
     return (
         <>
-        <section className="max-w-6xl mx-auto px-6 pt-20 md:pt-40 ">
-        <div className="grid gap-8 md:gap-12 items-center md:grid-cols-2">
+        <section className="max-w-6xl mx-auto px-6">
+        <div className="grid gap-8 md:gap-12 items-center md:grid-cols-2 mb-20">
             <div className="relative order-2 md:order-1">
             <div className="relative">
             <ProfileImage url={Me} variables="w-full rounded-full mx-auto border-8 border-white dark:border-gray-800"/>
@@ -41,7 +41,7 @@ export default function AboutMe() {
                         text-white hover:bg-[#4a3f62] dark:hover:bg-[#6b6088]
                         shadow-lg hover:shadow-xl
                         transition-all duration-300">
-                    Meine Projekte ansehen
+                    {data.cta}
                     <ArrowRight size={16} />
                     </Link>
 
@@ -53,7 +53,7 @@ export default function AboutMe() {
                         hover:bg-light-purple dark:hover:bg-primary-purple
                         text-base font-medium
                         transition-all duration-300">
-                    Mehr über mich erfahren
+                    {data.cta2}
                     </Link>
                 </div>
 
