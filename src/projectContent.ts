@@ -90,7 +90,7 @@ export const projectPageData = {
     data: projectsDE
   },
   en: {
-    title: "My",
+    title: "My ",
     title2: "Projects",
     description: "A selection of projects I've worked on.",
     data: projectsEN

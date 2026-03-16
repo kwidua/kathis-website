@@ -4,11 +4,15 @@ hero: {
         title1: "Hi. I'm ",
         title2: "Softwareengineer",
         text: "8+ years of experience in PHP/Symfony. Currently I'm deepening my expertise in React and modern frontend architecture.",
+        cta: "See my projects",
+        cta2: "Get to know me more"
     },
     de: {
         title1: "Hallo. Ich bin ",
         title2: "Softwareentwicklerin",
         text: "8+ Jahre Erfahrung in PHP/Symfony. Aktuell vertiefe ich meine Expertise in React und moderner Frontend-Architektur.",
+        cta: "Meine Projekte ansehen",
+        cta2: "Mehr über mich erfahren"
     }
 },
 
@@ -85,7 +89,7 @@ lebenslauf: {
         title: 'Curriculum Vitae',
         steps: [
             {
-                date: 'Feb 2026',
+                date: 'Feb 2026 - Apr 2026',
                 title: 'Advanced training at Syntax',
                 subtitle: 'Frontend mit React'
             },
@@ -95,17 +99,17 @@ lebenslauf: {
                 subtitle: 'Computer Science, Hochschule Bonn-Rhein-Sieg'
             },
             {
-                date: 'Okt 2020',
+                date: 'Okt 2020 - Okt 2025',
                 title: 'Softwareengineer Backend',
                 subtitle: 'Tideways GmbH'
             },
             {
-                date: 'Aug 2018',
+                date: 'Aug 2018 - Dec 2018',
                 title: 'Year abroad',
                 subtitle: 'Toronto, Kanada'
             },
             {
-                date: 'Okt 2016',
+                date: 'Okt 2016 - Okt 2020',
                 title: 'Working Student Web Development',
                 subtitle: 'Tideways GmbH'
             },
@@ -115,7 +119,7 @@ lebenslauf: {
         title: 'Lebenslauf',
         steps: [
                     {
-                    date: 'Feb 2026',
+                    date: 'Feb 2026 - Apr 2026',
                     title: 'Weiterbildung Syntax',
                     subtitle: 'Frontend mit React'
                 },
@@ -125,17 +129,17 @@ lebenslauf: {
                     subtitle: 'Informatik, Hochschule Bonn-Rhein-Sieg'
                 },
                 {
-                    date: 'Okt 2020',
+                    date: 'Okt 2020 - Okt 2025',
                     title: 'Softwareengineer Backend',
                     subtitle: 'Tideways GmbH'
                 },
                 {
-                    date: 'Aug 2018',
+                    date: 'Aug 2018 - Dec 2018',
                     title: 'Auslandssemester',
                     subtitle: 'Toronto, Kanada'
                 },
                 {
-                    date: 'Okt 2016',
+                    date: 'Okt 2016 - Okt 2020',
                     title: 'Werkstudent Webentwicklung',
                     subtitle: 'Tideways GmbH'
                 },
