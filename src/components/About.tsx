@@ -1,4 +1,4 @@
-import { Heart, Coffee, Code, Briefcase, GraduationCap, Sparkles } from "lucide-react";
+import { Heart, Code, Briefcase, GraduationCap, Sparkles, House } from "lucide-react";
 import  { content } from '../content.ts'
 import { useLanguageSwitcher } from "../contexts/LanguageContext.tsx"
 import garden from "./../assets/garden.jpg"
@@ -47,7 +47,8 @@ export default function About() {
             </div>
             <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed text-sm md:text-base">
               <p>{data.love.p1}</p>
-              <p>{}</p>
+              <p>{data.love.p2}</p>
+              <p>{data.love.p3}</p>
             </div>
           </div>
           </div>
@@ -77,13 +78,13 @@ export default function About() {
             </p>
           </div>
 
-          {/* <div className="bg-gradient-to-br from-[#fcbf49] to-[#fcbf49]/80 rounded-3xl p-6 text-white shadow-lg">
-            <Coffee className="size-10 mb-4" />
+          <div className="bg-gradient-to-br from-[#fcbf49] to-[#fcbf49]/80 rounded-3xl p-6 text-white shadow-lg">
+            <House className="size-10 mb-4" />
             <h3 className="text-lg md:text-xl font-bold mb-2">{data.fun.title}</h3>
             <p className="p-color text-sm md:text-base">
               {data.fun.description}
             </p>
-          </div> */}
+          </div>
         </div>
         </div>
 
