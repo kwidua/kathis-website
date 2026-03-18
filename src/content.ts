@@ -173,9 +173,9 @@ about: {
         },
         love: {
             title: 'Was ich liebe',
-            p1: 'Mich begeistert es, Dinge zu verstehen und kontinuierlich dazuzulernen, sei es eine neue Technologie, ein neuer Skill (ob technisch oder handwerklich), oder ein Fun Fact.',
-            p2: 'Außerhalb der Softwareentwicklung verbringe ich viel Zeit im Garten. Dort finde ich einen Ausgleich zur Bildschirmarbeit und es erinnert mich daran, dass viele Dinge Zeit, Geduld und kontinuierliche Pflege brauchen, um zu wachsen. Meine zwei Katzen und meine Schildkröten leisten mir dabei meist Gesellschaft.',
-            p3: 'Außerdem reise ich gerne'
+            p1: 'Mich begeistert es, Dinge zu verstehen und kontinuierlich dazuzulernen, sei es eine neue Technologie, ein neuer Skill (ob technisch oder handwerklich), oder ein Fun Fact. Ich liebe es, wenn Menschen mit Begeisterung von etwas erzählen, das reißt mich immer mit.',
+            p2: 'Außerhalb der Softwareentwicklung verbringe ich viel Zeit im Garten, unter anderem mit meinen Haustieren. In der Natur und komme ich runter und ich genieße die Anwesenheit von Tieren, weshalb man mich auch ab und zu im Wildpark findet.',
+            p3: 'Außerdem reise ich gerne. Ich habe 4 Jahre in Bulgarien gelebt (ich bin halb-Bulgarin), während der Schulzeit ein Auslandsjahr in den USA verbracht und während des Studiums ein Semester in Kanada. Neue Menschen und Perspektiven kennenlernen schätze ich sehr!'
         },
         experience: {
             title: 'Erfahrung',
@@ -191,7 +191,7 @@ about: {
         },
         fun: {
             title: 'Fun Fact',
-            description: ' '
+            description: 'Ich habe mit meinem Partner ein Haus gekauft und selbst renoviert, ich weiß jetzt wie man Stromkabel verlegt und Wände verputzt. :)'
         },
         personal: {
             title: 'Leben außerhalb des Codes ',
@@ -221,7 +221,9 @@ about: {
         },
         love: {
             title: 'What I Love',
-            p1: "When I'm not coding, you can find me e"
+            p1: "I'm passionate about understanding things and continuously learning, whether it's a new technology, a new skill (technical or practical), or a fun fact. I love it when people talk about something with enthusiasm; it always captivates me.",
+            p2: "Outside of software development, I spend a lot of time in the garden, including with my pets. Being in nature helps me unwind, and I enjoy the company of animals, which is why you might also find me at the wildlife park from time to time.",
+            p3: "I also love to travel. I lived in Bulgaria for four years (I'm half-Bulgarian), spent a year abroad in the USA during high school, and a semester in Canada during my university studies. I really value meeting new people and gaining new perspectives!"
         },
           experience: {
             title: 'Experience',
@@ -237,7 +239,7 @@ about: {
         },
         fun: {
             title: 'Fun Fact',
-            description: ''
+            description: 'My partner and I bought a house and renovated it ourselves; I now know how to lay electrical cables and plaster walls. :)'
         },
         personal: {
             title: "Life Outside of Code",
