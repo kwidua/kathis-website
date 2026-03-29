@@ -24,6 +24,7 @@ const projectsDE: Project[] = [
         "die mittels API Pflanzendaten speichert und Empfehlungen über die Pflege ausgibt (bester Schnittzeitpunkt, Gießverhalten, etc.). Unter Berücksichtigung dieser Daten, sowie Wetterdaten (Frost, extreme Wärme) wird eine Todo-Liste erstellt",
       technologies: ["React", "Typescript",  "Tailwind CSS", "Firebase", "Shadcn"],
       image: "https://images.unsplash.com/photo-1528659432556-884cfe1480ef?q=80&w=800",
+      demo: "https://garden-gnome.kathi-codes.dev",
       github: "https://github.com/kwidua/garden-gnome",
       color: "from-indigo-500 to-pink-500",
     },
@@ -69,6 +70,7 @@ const projectsEN: Project[] = [
       technologies: ["React", "Typescript",  "Tailwind CSS", "Firebase", "Shadcn"],
       image: "https://images.unsplash.com/photo-1528659432556-884cfe1480ef?q=80&w=800",
       github: "https://github.com/kwidua/garden-gnome",
+      demo: "https://garden-gnome.kathi-codes.dev",
       color: "from-indigo-500 to-pink-500",
     },
     {
